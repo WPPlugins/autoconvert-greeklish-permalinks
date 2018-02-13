@@ -190,10 +190,12 @@ function auto_gr_permalinks_admin_page() {
 		if ( isset( $_POST['taxonomy'] ) ) {
 			$terms = get_terms( array(
 				'taxonomy' => $_POST['taxonomy'],
+				'hide_empty' => 0,
 			) );
 			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 				foreach ( $terms as $term ) {
-					$current_term_slug = $term->slug;
+					setlocale( LC_ALL, 'el_GR' );
+					$current_term_slug = urldecode($term->slug);
 					if (! auto_gr_permalinks_is_valid_slug( $current_term_slug ) ) {
 						if ( ! $update_count_posts && ! $update_count_terms) {
 							echo '<h4>' . __( 'Permalinks updated', 'auto_gr_permalinks' ) . ':</h4><pre style="width:100%;max-width:800px;max-height:250px;overflow-y:scroll;background: white;border: 1px solid #e0e0e0;padding:  8px 14px;">';
