@@ -4,7 +4,7 @@ Author link: http://www.dimitrismavroudis.gr
 Tags: greek, greeklish permalink, latin, greeklish, slugs, permalinks, gr, autoconvert
 Requires at least: 3.0
 Tested up to: 4.9.4
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ On Settings > AutoConvert Greeklish Permalinks > Settings, you can, also, modify
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.3.1 =
+* Fixed bug that didn't allow taxonomies to be converted
 
 = 1.3 =
 * Added conversion of old terms

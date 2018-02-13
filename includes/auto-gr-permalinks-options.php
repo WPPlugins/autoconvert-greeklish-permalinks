@@ -202,7 +202,7 @@ function auto_gr_permalinks_admin_page() {
 						$args          = array(
 							'slug' => $new_term_slug
 						);
-						wp_update_term( $term->term_id, $args );
+						wp_update_term( $term->term_id, $term->taxonomy, $args );
 						$update_count_terms ++;
 						echo $current_term_slug . '->' . urldecode( $new_term_slug ) . '<br/>';
 					}
