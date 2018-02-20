@@ -4,7 +4,7 @@
 Plugin Name: AutoConvert Greeklish Permalinks
 Plugin URI: https://github.com/dimavroudis/AutoConvert-Greeklish-Permalink
 Description: Convert Greek characters to Latin on all your site's permalinks instantly. Supports: Custom Post Types and Taxonomies, WooCommerce
-Version: 1.3.5
+Version: 1.3.6
 Author: Dimitris Mavroudis
 Author URI: https://www.dimitrismavroudis.gr
 License: GPL2
@@ -21,9 +21,9 @@ add_action( 'admin_enqueue_scripts', 'auto_gr_permalinks_admin_css_js' );
 add_filter( 'plugin_action_links', 'auto_gr_permalinks_action_links', 10, 5 );
 
 // Load main functionality
-require plugin_dir_path( __FILE__ ) . 'includes/autoconvert-greeklish-permalinks.php';
+require plugin_dir_path( __FILE__ ) . 'includes/auto-gr-permalinks.php';
 // Load functions for settings page
-require plugin_dir_path( __FILE__ ) . 'includes/autoconvert-greeklish-permalinks-options.php';
+require plugin_dir_path( __FILE__ ) . 'includes/auto-gr-permalinks-options.php';
 
 // Load translations
 function auto_gr_permalinks_load_plugin_textdomain() {
@@ -60,7 +60,7 @@ function auto_gr_permalinks_set_options_on_activation() {
 	if ( get_option( 'auto_gr_permalinks_automatic' ) === false ) {
 		add_option ( 'auto_gr_permalinks_automatic', 'enabled' );
 	}
-	if ( get_option( 'auto_gr_permalinks_dipthongs' ) === 'enabled' ) {
+	if ( get_option( 'auto_gr_permalinks_dipthongs' ) === false ) {
 		add_option ( 'auto_gr_permalinks_diphthongs', 'enabled' );
 	}
 }
@@ -71,7 +71,7 @@ function auto_gr_permalinks_admin_css_js( $hook ) {
 		return;
 	}
 	wp_enqueue_style( 'auto_gr_permalinks_select2_styles', plugins_url( 'select2/select2.min.css', __FILE__ ) );
-	wp_enqueue_style( 'auto_gr_permalinks_admin_styles', plugins_url( 'includes/autoconvert-greeklish-permalinks-admin.css', __FILE__ ) );
+	wp_enqueue_style( 'auto_gr_permalinks_admin_styles', plugins_url( 'includes/auto-gr-permalinks-admin.css', __FILE__ ) );
 
 	wp_enqueue_script( 'auto_gr_permalinks_select2_js', plugins_url( 'select2/select2.min.js', __FILE__ ) );
 }

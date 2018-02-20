@@ -11,7 +11,7 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: autoconvert-greeklish-permalinks.php\n"
+"X-Poedit-WPHeader: auto-gr-permalinks.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
@@ -21,89 +21,89 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: autoconvert-greeklish-permalinks.php:43
-#: includes/autoconvert-greeklish-permalinks-options.php:67
+#: auto-gr-permalinks.php:43
+#: includes/auto-gr-permalinks-options.php:67
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:7
+#: includes/auto-gr-permalinks-options.php:7
 msgid "Automatic Conversion"
 msgstr "Αυτόματη μετατροπή"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:8
+#: includes/auto-gr-permalinks-options.php:8
 msgid "Automatic conversion of new posts/terms to greeklish"
 msgstr "Αυτόματη μετατροπή νέων άρθρων/όρων σε greeklish"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:10
+#: includes/auto-gr-permalinks-options.php:10
 msgid "Customization"
 msgstr "Παραμετροποιήσεις"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:11
+#: includes/auto-gr-permalinks-options.php:11
 msgid "Do you want diphthongs to be converted?"
 msgstr "Θέλετε οι δίφθογγοι να μετατραπούν;"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:44
+#: includes/auto-gr-permalinks-options.php:44
 msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
 msgstr ""
 "Για παράδειγμα \"ει\", \"οι\" γίνεται  \"i\", \"μπ\" γίνεται  \"b\" κτλ"
 
 #. Plugin Name of the plugin/theme
-#: includes/autoconvert-greeklish-permalinks-options.php:52
+#: includes/auto-gr-permalinks-options.php:52
 msgid "AutoConvert Greeklish Permalinks"
 msgstr "AutoConvert Greeklish Permalinks"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:69
+#: includes/auto-gr-permalinks-options.php:69
 msgid "Convert old posts/terms"
 msgstr "Μετατροπή παλιών άρθρων/όρων"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:77
+#: includes/auto-gr-permalinks-options.php:77
 msgid "Save Settings"
 msgstr "Αποθήκευση Αλλαγών"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:87
-#: includes/autoconvert-greeklish-permalinks-options.php:90
+#: includes/auto-gr-permalinks-options.php:87
+#: includes/auto-gr-permalinks-options.php:90
 msgid "Post types to convert"
 msgstr "Τύποι άρθρων  για μετατροπή"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:92
+#: includes/auto-gr-permalinks-options.php:92
 msgid "Select one or more post types"
 msgstr "Επιλέξτε ένα ή περισσότερα τύπο άρθρου"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:113
-#: includes/autoconvert-greeklish-permalinks-options.php:116
+#: includes/auto-gr-permalinks-options.php:113
+#: includes/auto-gr-permalinks-options.php:116
 msgid "Taxonomies to convert"
 msgstr "Ταξονομίες για μετατροπή"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:118
+#: includes/auto-gr-permalinks-options.php:118
 msgid "Select one or more taxonomies"
 msgstr "Επιλέξτε ένα ή περισσότερα είδη ταξονομιών"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:138
+#: includes/auto-gr-permalinks-options.php:138
 msgid "Convert Permalinks"
 msgstr "Μετατροπή Συνδέσμων"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:164
-#: includes/autoconvert-greeklish-permalinks-options.php:186
+#: includes/auto-gr-permalinks-options.php:164
+#: includes/auto-gr-permalinks-options.php:186
 msgid "Permalinks updated"
 msgstr "Σύνδεσμοι που ενημερώθηκαν"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:200
+#: includes/auto-gr-permalinks-options.php:200
 msgid "post"
 msgstr "άρθρου"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:200
+#: includes/auto-gr-permalinks-options.php:200
 msgid "posts"
 msgstr "άρθρων"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:201
+#: includes/auto-gr-permalinks-options.php:201
 msgid "term"
 msgstr "όρου"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:201
+#: includes/auto-gr-permalinks-options.php:201
 msgid "terms"
 msgstr "όρων"
 
-#: includes/autoconvert-greeklish-permalinks-options.php:202
+#: includes/auto-gr-permalinks-options.php:202
 #, php-format
 msgid "Permalinks successfully generated for %s %s and %s %s"
 msgstr "Μετατράπηκαν επιτυχημένα οι σύνδεσμοι %s %s και %s %s"
