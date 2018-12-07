@@ -3,8 +3,8 @@ Contributors: Dimitris Mavroudis, d1m1tr1s_mav
 Author link: http://www.dimitrismavroudis.gr
 Tags: greek, greeklish permalink, latin, greeklish, slugs, permalinks, gr, autoconvert
 Requires at least: 3.0
-Tested up to: 4.9.4
-Stable tag: 1.3.7
+Tested up to: 5.0
+Stable tag: 1.3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,7 +41,7 @@ On Settings > AutoConvert Greeklish Permalinks > Settings, you can, also, modify
 
 == Changelog ==
 
-= 1.3.7 =
+= 1.3.8 =
 * Added support for two more letters, ΐ and ΰ. (Thanks yto @princeofabyss)
 
 = 1.3.6 =
