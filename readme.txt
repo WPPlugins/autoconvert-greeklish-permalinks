@@ -4,7 +4,7 @@ Author link: https://mavrou.gr
 Tags: greek, greeklish permalink, greeklish, slugs, permalinks, links, autoconvert, convert greek, agp
 Requires at least: 3.0
 Tested up to: 5.0
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

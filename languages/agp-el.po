@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: agp\n"
-"POT-Creation-Date: 2019-01-24 14:09+0200\n"
+"POT-Creation-Date: 2019-01-25 00:49+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
 "Language-Team: \n"
@@ -29,29 +29,29 @@ msgstr "AutoConvert Greeklish Permalinks"
 msgid "Convert Greek Permalinks"
 msgstr "Μετατροπή ελληνικών συνδέσμων"
 
-#: admin/agp-admin.php:97
+#: admin/agp-admin.php:99
 msgid "post"
 msgstr "δημοσιεύση"
 
-#: admin/agp-admin.php:97
+#: admin/agp-admin.php:99
 msgid "posts"
 msgstr "δημοσιεύσεις"
 
-#: admin/agp-admin.php:98
+#: admin/agp-admin.php:100
 msgid "term"
 msgstr "όρο"
 
-#: admin/agp-admin.php:98
+#: admin/agp-admin.php:100
 msgid "terms"
 msgstr "όρους"
 
-#: admin/agp-admin.php:99
+#: admin/agp-admin.php:101
 #, php-format
 msgid "Permalinks successfully generated for <b>%d %s</b> and <b>%d %s</b>"
 msgstr ""
 "Μετατράπηκαν επιτυχημένα οι σύνδεσμοι για <b>%d %s</b> και <b>%d %s</b>"
 
-#: admin/agp-admin.php:108
+#: admin/agp-admin.php:110
 msgid ""
 "<b>No permalink was converted.</b> All your permalinks were already in latin "
 "characters."
@@ -59,29 +59,29 @@ msgstr ""
 "<b>Κανένας σύνδεσμος δεν μετατράπηκε.</b>Όλοι οι σύνδεσμοί σας ήταν ήδη με  "
 "λατινικούς χαρακτήρες."
 
-#: admin/agp-admin.php:114
+#: admin/agp-admin.php:117
 #, php-format
 msgid "The post \"<a href=\"%s\">%s</a>\" was not converted. %s"
 msgstr "Η δημοσίευση \"< a href =\" %s \"\" %s </a> \"  δεν μετατράπηκε. %s"
 
-#: admin/agp-admin.php:125
+#: admin/agp-admin.php:129
 #, php-format
 msgid "The term \"<a href=\"%s\">%s</a>\" was not converted. %s"
 msgstr "Ο όρος \"< a href =\" %s \" %s </a>\" δεν μετατράπηκε. %s"
 
-#: admin/agp-admin.php:151
+#: admin/agp-admin.php:155
 msgid "Do you want all new permalinks to be converted to greeklish?"
 msgstr "Θέλετε όλα οι νέοι σύνδεσμοι  να μετατρέπονται σε greeklish;"
 
-#: admin/agp-admin.php:155
+#: admin/agp-admin.php:159
 msgid "How do you want diphthongs to be converted?"
 msgstr "Πώς θέλετε να μετατραπούν οι δίφθογγοι;"
 
-#: admin/agp-admin.php:208
+#: admin/agp-admin.php:212
 msgid "Simple conversion"
 msgstr "Απλή μετατροπή"
 
-#: admin/agp-admin.php:208
+#: admin/agp-admin.php:212
 msgid ""
 "For example \"ει\" becomes \"ei\", \"οι\" becomes \"οi\", \"μπ\" becomes \"mp"
 "\" etc"
@@ -89,19 +89,19 @@ msgstr ""
 "Για παράδειγμα \"ει\" γίνεται \"ei\", \"οι\" γίνεται \"oi\", \"μπ\" γίνεται "
 "\"mp\""
 
-#: admin/agp-admin.php:216
+#: admin/agp-admin.php:220
 msgid "Advanced conversion"
 msgstr "Προηγμένη μετατροπή"
 
-#: admin/agp-admin.php:216
+#: admin/agp-admin.php:220
 msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
 msgstr "Για παράδειγμα \"ει\", \"οι\" γίνεται  \"i\", \"μπ\" γίνεται  \"b\""
 
-#: admin/agp-admin.php:284 admin/partials/agp-admin-view.php:15
+#: admin/agp-admin.php:288 admin/partials/agp-admin-view.php:15
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: admin/agp-admin.php:287
+#: admin/agp-admin.php:291
 msgid "Convert old permalinks"
 msgstr "Μετατροπή παλιών συνδέσμων"
 

@@ -21,67 +21,67 @@ msgstr ""
 msgid "Convert Greek Permalinks"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:97
+#: trunk/admin/agp-admin.php:99
 msgid "post"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:97
+#: trunk/admin/agp-admin.php:99
 msgid "posts"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:98
+#: trunk/admin/agp-admin.php:100
 msgid "term"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:98
+#: trunk/admin/agp-admin.php:100
 msgid "terms"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:99
+#: trunk/admin/agp-admin.php:101
 msgid "Permalinks successfully generated for <b>%d %s</b> and <b>%d %s</b>"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:108
+#: trunk/admin/agp-admin.php:110
 msgid "<b>No permalink was converted.</b> All your permalinks were already in latin characters."
 msgstr ""
 
-#: trunk/admin/agp-admin.php:114
+#: trunk/admin/agp-admin.php:117
 msgid "The post \"<a href=\"%s\">%s</a>\" was not converted. %s"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:125
+#: trunk/admin/agp-admin.php:129
 msgid "The term \"<a href=\"%s\">%s</a>\" was not converted. %s"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:151
+#: trunk/admin/agp-admin.php:155
 msgid "Do you want all new permalinks to be converted to greeklish?"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:155
+#: trunk/admin/agp-admin.php:159
 msgid "How do you want diphthongs to be converted?"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:208
+#: trunk/admin/agp-admin.php:212
 msgid "Simple conversion"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:208
+#: trunk/admin/agp-admin.php:212
 msgid "For example \"ει\" becomes \"ei\", \"οι\" becomes \"οi\", \"μπ\" becomes \"mp\" etc"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:216
+#: trunk/admin/agp-admin.php:220
 msgid "Advanced conversion"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:216
+#: trunk/admin/agp-admin.php:220
 msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:284, trunk/admin/partials/agp-admin-view.php:15
+#: trunk/admin/agp-admin.php:288, trunk/admin/partials/agp-admin-view.php:15
 msgid "Settings"
 msgstr ""
 
-#: trunk/admin/agp-admin.php:287
+#: trunk/admin/agp-admin.php:291
 msgid "Convert old permalinks"
 msgstr ""
 

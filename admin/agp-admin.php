@@ -92,6 +92,8 @@ class Agp_Admin {
 
 			$posts_count = $this->converter->getPostCount();
 			$terms_count = $this->converter->getTermCount();
+			$post_errors = $this->converter->getPostErrors();
+			$terms_errors = $this->converter->getTermErrors();
 
 			if ( $posts_count || $terms_count ) {
 				$posts_txt   = $posts_count == 1 ? __( 'post', 'agp' ) : __( 'posts', 'agp' );
@@ -109,8 +111,9 @@ class Agp_Admin {
 				</div>
 				<?php
 			}
-			if ( ! empty( $this->converter->getPostErrors() ) ) {
-				foreach ( $this->converter->getPostErrors() as $error ) {
+
+			if ( ! empty( $post_errors ) ) {
+				foreach ( $post_errors as $error ) {
 					$text_format = __( 'The post "<a href="%s">%s</a>" was not converted. %s', 'agp' );
 					$post_id     = $error['post_id'];
 					?>
@@ -120,8 +123,9 @@ class Agp_Admin {
 					<?php
 				}
 			}
-			if ( ! empty( $this->converter->getTermErrors() ) ) {
-				foreach ( $this->converter->getTermErrors() as $error ) {
+
+			if ( ! empty( $terms_errors ) ) {
+				foreach ( $terms_errors as $error ) {
 					$text_format = __( 'The term "<a href="%s">%s</a>" was not converted. %s', 'agp' );
 					$term        = get_term( $error['term_id'], $error['taxonomy'] );
 					?>
