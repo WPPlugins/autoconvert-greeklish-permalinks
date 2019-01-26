@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: agp\n"
-"POT-Creation-Date: 2019-01-25 00:49+0200\n"
+"POT-Creation-Date: 2019-01-26 12:41+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
 "Language-Team: \n"

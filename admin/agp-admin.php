@@ -90,9 +90,9 @@ class Agp_Admin {
 
 			$this->converter->convertAll( $posts_type, $taxonomy );
 
-			$posts_count = $this->converter->getPostCount();
-			$terms_count = $this->converter->getTermCount();
-			$post_errors = $this->converter->getPostErrors();
+			$posts_count  = $this->converter->getPostCount();
+			$terms_count  = $this->converter->getTermCount();
+			$post_errors  = $this->converter->getPostErrors();
 			$terms_errors = $this->converter->getTermErrors();
 
 			if ( $posts_count || $terms_count ) {
