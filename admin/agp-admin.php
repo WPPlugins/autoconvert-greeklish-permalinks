@@ -251,8 +251,10 @@ class Agp_Admin {
 	 *
 	 * @param   string      The hook
 	 */
-	public function enqueue_styles() {
-
+	public function enqueue_styles( $hook ) {
+		if ( $hook != 'settings_page_agp' ) {
+			return;
+		}
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/agp-admin.css', array(), $this->version, 'all' );
 		wp_enqueue_style( 'select2', plugin_dir_url( __FILE__ ) . 'css/select2.min.css', array(), $this->version, 'all' );
 
@@ -265,8 +267,10 @@ class Agp_Admin {
 	 *
 	 * @param   string      The hook
 	 */
-	public function enqueue_scripts() {
-
+	public function enqueue_scripts( $hook ) {
+		if ( $hook != 'settings_page_agp' ) {
+			return;
+		}
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/select2.min.js', array( 'jquery' ), $this->version, false );
 
 	}

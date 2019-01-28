@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AutoConvert Greeklish Permalinks\n"
-"POT-Creation-Date: 2019-01-26 18:20+0200\n"
-"PO-Revision-Date: 2019-01-26 18:23+0200\n"
+"POT-Creation-Date: 2019-01-28 17:50+0200\n"
+"PO-Revision-Date: 2019-01-28 17:50+0200\n"
 "Last-Translator: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
 "Language-Team: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
 "Language: el_GR\n"
@@ -98,11 +98,11 @@ msgstr "Προηγμένη μετατροπή"
 msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
 msgstr "Για παράδειγμα \"ει\", \"οι\" γίνεται  \"i\", \"μπ\" γίνεται  \"b\""
 
-#: admin/agp-admin.php:288 admin/partials/agp-admin-view.php:15
+#: admin/agp-admin.php:292 admin/partials/agp-admin-view.php:15
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: admin/agp-admin.php:291
+#: admin/agp-admin.php:295
 msgid "Convert old permalinks"
 msgstr "Μετατροπή παλιών συνδέσμων"
 

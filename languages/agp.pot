@@ -86,11 +86,11 @@ msgstr ""
 msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
 msgstr ""
 
-#: admin/agp-admin.php:288 admin/partials/agp-admin-view.php:15
+#: admin/agp-admin.php:292 admin/partials/agp-admin-view.php:15
 msgid "Settings"
 msgstr ""
 
-#: admin/agp-admin.php:291
+#: admin/agp-admin.php:295
 msgid "Convert old permalinks"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgid "Convert old posts/terms"
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:6
-msgid "Thing to know before you start the conversion"
+msgid "Things to know before you start the conversion"
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:7
@@ -116,15 +116,15 @@ msgid "During that time do not close this window."
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:9
-msgid "When all your permalinks are converted a success message will appear at the top of your page."
+msgid "When all your permalinks are converted, a success message will appear at the top of your page."
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:10
-msgid "If the process take to long, your server will probably stop the process midway*. If this happens, do not worry. Just re-run the process to finish the rest of the conversion."
+msgid "If the process takes too long, your server will probably stop the process*. If this happens, do not worry. Just re-run the process to finish the rest of the conversion."
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:11
-msgid "*Working on a fix for this issue on a future version of the plugin."
+msgid "*Working on a fix for this issue for a future version."
 msgstr ""
 
 #: admin/partials/agp-converter-view.php:21
