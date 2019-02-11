@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * The view for admin page
+ *
+ * @since    2.0.0
+ *
+ */
 if ( ! current_user_can( 'manage_options' ) ) {
 	return;
 }

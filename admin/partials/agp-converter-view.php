@@ -1,29 +1,36 @@
 <?php
+/**
+ * The view for converter tab content
+ *
+ * @since    2.0.0
+ *
+ */
 
 $log      = get_option( 'agp_conversion' );
 $status   = $log['status'] === 'started';
 $disabled = $status ? 'disabled' : '';
 
-if ( isset( $_POST['convert-button'] ) ) {
 
-	$posts_type = isset( $_POST['post-type'] ) ? $_POST['post-type'] : false;
-	$taxonomy   = isset( $_POST['taxonomy'] ) ? $_POST['taxonomy'] : false;
+//Populate select fields
+$args_post = array( 'public' => true, );
+$args_tax  = array( 'public' => true, );
 
-	$has_posts = $this->convert( $posts_type, $taxonomy );
+$tax  = get_taxonomies( $args_tax, 'objects' );
+$post = get_post_types( $args_post, 'names' );
 
-	if ( ! $has_posts ) {
-		?>
-		<div class="notice notice-info is-dismissible">
-			<p><?php _e( '<b>No permalink was converted.</b> All your permalinks were already in latin characters.', 'agp' ) ?></p>
-		</div>
-		<?php
-	} else {
-		?>
-		<div class="notice notice-success is-dismissible">
-			<p><b><?php _e( 'Permalinks conversion has started in the background.', 'agp' ) ?></b></p>
-		</div>
-		<?php
-	}
+$post_types = $taxonomies = array();
+
+foreach ( $post as $post_type ) {
+	$obj          = get_post_type_object( $post_type );
+	$value        = $post_type;
+	$name         = $obj->labels->name;
+	$post_types[] = array( 'value' => $value, 'name' => $name );
+}
+
+foreach ( $tax as $taxonomy ) {
+	$value        = $taxonomy->name;
+	$name         = $taxonomy->labels->name;
+	$taxonomies[] = array( 'value' => $value, 'name' => $name );
 }
 ?>
 <div>
@@ -36,50 +43,43 @@ if ( isset( $_POST['convert-button'] ) ) {
 				<tbody>
 				<tr>
 					<th>
-						<label for="post-type[]"><?php _e( 'Post types to convert', 'agp' ); ?></label>
+						<label for="selectPosts"><?php _e( 'Post types to convert', 'agp' ); ?></label>
 					</th>
 					<td>
 						<select title="<?php _e( 'Post types to convert', 'agp' ); ?>"
-								name="post-type[]" class="select2" <?php echo $disabled ?>
+								name="post-types[]" class="select2" <?php echo $disabled ?> id="selectPosts"
 								data-placeholder="<?php _e( 'Select one or more post types', 'agp' ); ?>"
 								multiple>
-							<?php
-							$args       = array(
-								'public' => true,
-							);
-							$post_types = get_post_types( $args, 'names' );
-							?>
-							<?php
-							foreach ( $post_types as $post_type ) {
-								$obj = get_post_type_object( $post_type );
-								?>
-								<option value="<?php esc_attr_e( $post_type ); ?>">
-									<?php echo $obj->labels->name; ?>
+							<?php foreach ( $post_types as $post_type ) { ?>
+								<option value="<?php echo esc_attr( $post_type['value'] ); ?>">
+									<?php echo $post_type['name']; ?>
 								</option>
 							<?php } ?>
 						</select>
+						<div>
+							<button class="light-btn" id="selectAllPosts"><?php _e( 'Select All', 'agp' ) ?></button>
+						</div>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<label for="taxonomy[]"><?php _e( 'Taxonomies to convert', 'agp' ); ?></label>
+						<label for="selectTaxonomies"><?php _e( 'Taxonomies to convert', 'agp' ); ?></label>
 					</th>
 					<td>
 						<select title="<?php _e( 'Taxonomies to convert', 'agp' ); ?>"
-								name="taxonomy[]" class="select2" <?php echo $disabled ?>
+								name="taxonomies[]" class="select2" <?php echo $disabled ?> id="selectTaxonomies"
 								data-placeholder="<?php _e( 'Select one or more taxonomies', 'agp' ); ?>"
 								multiple>
-							<?php
-							$args       = array(
-								'public' => true,
-							);
-							$taxonomies = get_taxonomies( $args, 'objects' );
-							foreach ( $taxonomies as $taxonomy ) { ?>
-								<option value="<?php esc_attr_e( $taxonomy->name ); ?>">
-									<?php echo $taxonomy->labels->name; ?>
+							<?php foreach ( $taxonomies as $taxonomy ) { ?>
+								<option value="<?php echo esc_attr( $taxonomy['value'] ); ?>">
+									<?php echo $taxonomy['name']; ?>
 								</option>
 							<?php } ?>
 						</select>
+						<div>
+							<button class="light-btn"
+									id="selectAllTaxonomies"><?php _e( 'Select All', 'agp' ) ?></button>
+						</div>
 					</td>
 				</tr>
 				</tbody>
@@ -88,7 +88,7 @@ if ( isset( $_POST['convert-button'] ) ) {
 			<input name="convert-button" type="hidden" value="1"/>
 			<p class="submit">
 				<input type="submit" name="submit" id="submit" class="button button-primary"
-					<?php echo $log['status'] === 'started' ? 'disabled' : ''; ?>
+					<?php echo $disabled ?>
 					   value="<?php _e( 'Convert Permalinks', 'agp' ); ?>">
 			</p>
 		</form>
@@ -97,8 +97,19 @@ if ( isset( $_POST['convert-button'] ) ) {
 	<?php include_once( 'agp-log-view.php' ); ?>
 
 </div>
+
 <script>
 	jQuery(function () {
 		jQuery('.select2').select2();
+		jQuery("#selectAllPosts").click(function (e) {
+			e.preventDefault();
+			jQuery("#selectPosts > option").prop("selected", "selected");
+			jQuery("#selectPosts").trigger("change");
+		});
+		jQuery("#selectAllTaxonomies").click(function (e) {
+			e.preventDefault();
+			jQuery("#selectTaxonomies > option").prop("selected", "selected");
+			jQuery("#selectTaxonomies").trigger("change");
+		});
 	});
 </script>

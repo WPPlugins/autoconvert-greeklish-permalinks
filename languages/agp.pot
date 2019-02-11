@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: AutoConvert Greeklish Permalinks\n"
-"POT-Creation-Date: 2019-02-01 20:37+0200\n"
+"POT-Creation-Date: 2019-02-09 19:08+0200\n"
 "PO-Revision-Date: 2019-02-01 20:35+0200\n"
 "Last-Translator: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
 "Language-Team: Dimitris Mavroudis <info@dimitrismavroudis.gr>\n"
@@ -22,156 +22,164 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: admin/agp-admin.php:67
+#: admin/agp-admin.php:72
 msgid "AutoConvert Greeklish Permalinks"
 msgstr ""
 
-#: admin/agp-admin.php:67
+#: admin/agp-admin.php:72
 msgid "Convert Greek Permalinks"
 msgstr ""
 
-#: admin/agp-admin.php:90
-msgid ""
-"<b>No permalink was converted.</b> All your permalinks were already in latin "
-"characters."
-msgstr ""
-
-#: admin/agp-admin.php:96
-msgid "Permalinks conversion has started in the background."
-msgstr ""
-
-#: admin/agp-admin.php:117
+#: admin/agp-admin.php:88
 msgid "Do you want all new permalinks to be converted to greeklish?"
 msgstr ""
 
-#: admin/agp-admin.php:121
+#: admin/agp-admin.php:92
 msgid "How do you want diphthongs to be converted?"
 msgstr ""
 
-#: admin/agp-admin.php:174
-msgid "Simple conversion"
+#: admin/agp-admin.php:160
+msgid "All your permalinks were already in greeklish."
 msgstr ""
 
-#: admin/agp-admin.php:174
-msgid ""
-"For example \"ει\" becomes \"ei\", \"οι\" becomes \"οi\", \"μπ\" becomes \"mp"
-"\" etc"
+#: admin/agp-admin.php:164
+msgid "Permalinks conversion has started in the background."
 msgstr ""
 
-#: admin/agp-admin.php:182
-msgid "Advanced conversion"
-msgstr ""
-
-#: admin/agp-admin.php:182
-msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
-msgstr ""
-
-#: admin/agp-admin.php:214
+#: admin/agp-admin.php:193
 #, php-format
 msgid "Permalinks conversion is at %s"
 msgstr ""
 
-#: admin/agp-admin.php:227
+#: admin/agp-admin.php:203
 msgid "Permalinks conversion is done!"
 msgstr ""
 
-#: admin/agp-admin.php:227
+#: admin/agp-admin.php:203
 msgid "Dismiss"
 msgstr ""
 
-#: admin/agp-admin.php:370 admin/partials/agp-admin-view.php:15
+#: admin/agp-admin.php:295 admin/partials/agp-admin-view.php:20
 msgid "Settings"
 msgstr ""
 
-#: admin/agp-admin.php:373
+#: admin/agp-admin.php:298
 msgid "Convert old permalinks"
 msgstr ""
 
-#: admin/partials/agp-admin-view.php:12
+#: admin/partials/agp-admin-view.php:17
 msgid "Convert Permalinks to Greeklish"
 msgstr ""
 
-#: admin/partials/agp-admin-view.php:17 admin/partials/agp-converter-view.php:7
+#: admin/partials/agp-admin-view.php:22
+#: admin/partials/agp-converter-view.php:39
 msgid "Convert old posts/terms"
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:8
+#: admin/partials/agp-converter-view.php:40
 msgid ""
 "Depending on your server and the amount of permalinks that needs to be "
 "converted, the conversion might take a few minutes to complete."
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:14
-#: admin/partials/agp-converter-view.php:17
+#: admin/partials/agp-converter-view.php:46
+#: admin/partials/agp-converter-view.php:49
 msgid "Post types to convert"
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:19
+#: admin/partials/agp-converter-view.php:51
 msgid "Select one or more post types"
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:40
-#: admin/partials/agp-converter-view.php:43
+#: admin/partials/agp-converter-view.php:60
+#: admin/partials/agp-converter-view.php:81
+msgid "Select All"
+msgstr ""
+
+#: admin/partials/agp-converter-view.php:66
+#: admin/partials/agp-converter-view.php:69
 msgid "Taxonomies to convert"
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:45
+#: admin/partials/agp-converter-view.php:71
 msgid "Select one or more taxonomies"
 msgstr ""
 
-#: admin/partials/agp-converter-view.php:67
+#: admin/partials/agp-converter-view.php:92
 msgid "Convert Permalinks"
 msgstr ""
 
-#: admin/partials/agp-log-view.php:15
+#: admin/partials/agp-diphthongs-option-view.php:16
+msgid "Simple conversion"
+msgstr ""
+
+#: admin/partials/agp-diphthongs-option-view.php:16
+msgid ""
+"For example \"ει\" becomes \"ei\", \"οι\" becomes \"οi\", \"μπ\" becomes \"mp"
+"\" etc"
+msgstr ""
+
+#: admin/partials/agp-diphthongs-option-view.php:24
+msgid "Advanced conversion"
+msgstr ""
+
+#: admin/partials/agp-diphthongs-option-view.php:24
+msgid "For example \"ει\", \"οι\" becomes \"i\", \"μπ\" becomes \"b\" etc"
+msgstr ""
+
+#: admin/partials/agp-log-view.php:19
 msgid "post"
 msgstr ""
 
-#: admin/partials/agp-log-view.php:15
+#: admin/partials/agp-log-view.php:19
 msgid "posts"
 msgstr ""
 
-#: admin/partials/agp-log-view.php:16
+#: admin/partials/agp-log-view.php:20
 msgid "term"
 msgstr ""
 
-#: admin/partials/agp-log-view.php:16
+#: admin/partials/agp-log-view.php:20
 msgid "terms"
 msgstr ""
 
-#: admin/partials/agp-log-view.php:21
-msgid "Report of last conversion"
-msgstr ""
-
-#: admin/partials/agp-log-view.php:23
+#: admin/partials/agp-log-view.php:38
 #, php-format
-msgid "Started at %s and finished at %s. <br>Duration: %d second(s)"
-msgstr ""
-
-#: admin/partials/agp-log-view.php:26
-#, php-format
-msgid "Permalinks successfully converted %d/%d %s and %d/%d %s."
-msgstr ""
-
-#: admin/partials/agp-log-view.php:31
-msgid "The following errors occurred"
-msgstr ""
-
-#: admin/partials/agp-log-view.php:37
-#, php-format
-msgid "The post <a href=\"%s\">%s</a> was not converted. %s"
+msgid "The post %s was not converted. %s"
 msgstr ""
 
 #: admin/partials/agp-log-view.php:42
 #, php-format
-msgid "The term <a href=\"%s\">%s</a> was not converted. %s"
+msgid "The term %s was not converted. %s"
 msgstr ""
 
-#: admin/partials/agp-settings-view.php:8
+#: admin/partials/agp-log-view.php:51
+msgid "Last conversion report"
+msgstr ""
+
+#: admin/partials/agp-log-view.php:54
+#, php-format
+msgid "Duration: %s"
+msgstr ""
+
+#: admin/partials/agp-log-view.php:57
+#, php-format
+msgid "Permalinks successfully converted for %d/%d %s and %d/%d %s."
+msgstr ""
+
+#: admin/partials/agp-log-view.php:61
+msgid "The following errors occurred:"
+msgstr ""
+
+#: admin/partials/agp-log-view.php:69
+msgid "No errors reported."
+msgstr ""
+
+#: admin/partials/agp-settings-view.php:13
 msgid "Save Settings"
 msgstr ""
 
-#: vendor/wp-background-processing/classes/wp-background-process.php:425
+#: vendor/wp-background-processing/classes/wp-background-process.php:427
 #, php-format
 msgid "Every %d Minutes"
 msgstr ""
