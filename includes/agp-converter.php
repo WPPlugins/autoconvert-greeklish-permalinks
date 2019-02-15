@@ -227,7 +227,7 @@ class Agp_Converter extends WP_Background_Process {
 			$term_query = $wpdb->get_results( $sql );
 
 			foreach ( $term_query as $term ) {
-				$slug = urldecode($term->slug);
+				$slug = urldecode( $term->slug );
 				if ( ! self::isValidSlug( $slug ) ) {
 					$term = (object) array_merge( array( 'type' => 'term' ), (array) $term );
 					$this->push_to_queue( $term );
@@ -287,14 +287,14 @@ class Agp_Converter extends WP_Background_Process {
 	protected function task( $item ) {
 
 		$log = get_option( 'agp_conversion' );
-		error_log( print_r( $item, true ) );
+
 		if ( $item->type === 'post' ) {
-			$slug = $item->post_name;
+			$slug                        = urldecode($item->post_name);
 			$post_to_update              = array();
 			$post_to_update['ID']        = $item->ID;
-			$post_to_update['post_name'] = self::convertSlug($slug);
+			$post_to_update['post_name'] = self::convertSlug( $slug );
 			$is_converted                = wp_update_post( $post_to_update, true );
-			error_log( $is_converted );
+
 			if ( ! is_wp_error( $is_converted ) ) {
 				$log['converted']['posts'] ++;
 			} else {
@@ -309,7 +309,7 @@ class Agp_Converter extends WP_Background_Process {
 		}
 
 		if ( $item->type === 'term' ) {
-			$slug = $item->slug;
+			$slug          = urldecode($item->slug);
 			$new_term_slug = self::convertSlug( $slug );
 			$is_converted  = self::updateTerm( $item->term_id, $item->taxonomy, $new_term_slug );
 
